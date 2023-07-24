@@ -1,43 +1,103 @@
-* {
-    border: 0.5px solid red;
-}
+
 
 body {
-    background-color: lightgray;
+  background-color: lightgray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .title {
-    text-align: center;
-    font-size: 25px;
+  text-align: center;
+  font-size: 25px;
 }
 
 .playground {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
-.options {
-    background-color: black;
-    width: 550px;
-    height: 150px;
-    border-bottom-left-radius: 3rem;
-    border-bottom-right-radius:3rem;
-    color:white;
+.interface {
+  background-color: black;
+  width: 550px;
+  height: 150px;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  padding-bottom: 1rem;
+  box-shadow: 8px 20px 10px 0 rgba(0, 0, 0, 0.2)
 }
+
 
 .frame {
-    background-color: white;
-    width: 500px;
-    height:500px;
-    border: 25px solid black;
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  border-top: 25px solid black;
+  border-left: 25px solid black;
+  border-right: 25px solid black;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  box-shadow: 8px 20px 10px 0 rgba(0, 0, 0, 0.2)
 }
 
 .canvas {
-    width: 500px;
-    height: 500px;
-    text-align: center;
-    display: grid;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  display: grid;
 }
 
+.options {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.optionschoice1 {
+ padding-left: 1rem;
+}
+
+.slider {
+  -webkit-appearance: none;
+
+  width: 80%;
+  background: white;
+  border-radius: 1rem;
+}
+
+.slider::-webkit-slider-thumb{
+  border-radius: 50%;
+  cursor: pointer;
+  background: black;
+}
+
+.optionschoice2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+
+.optionstitle {
+  text-align: center;
+  font-weight: bold;
+}
+
+.copyright {
+  text-align: center;
+  
+}
+
+button {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  padding: 0rem 1rem 0rem 1rem;
+  margin: 1rem;
+}

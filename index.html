@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
 </head>
 
@@ -13,12 +13,30 @@
     </div>
     <div class="playground">
         <div class="frame">
-            <div id="canvas" class="canvas">
-
-            </div>
+            <div id="canvas" class="canvas"></div>
         </div>
-        <div class="options">
-            <p> Copyright © Ciara Cade</p>
+        <div class="interface">
+            <h3 style="text-align: center">Controls</h3>
+            <div class="options">
+                <div class="optionsleft">
+                   
+                    <div class="optionschoice1">
+                        
+                        <input type="range" min="16" max="64" class ="slider">
+                        <span class="canvasSize">16x16</span>
+                    </div>
+                </div>
+                <div class="optionsright">
+                    
+                    <div class="optionschoice2">
+                        <button>Black</button>
+                        <button>Rainbow</button>
+                        <button>Eraser</button>
+                        <button>Clear</button>
+                    </div>
+                </div>
+            </div>
+           
         </div>
     </div>
 </body>
